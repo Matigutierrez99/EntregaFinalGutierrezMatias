@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+nav div li {
+  padding: 0 20px;
+}
+
+.carousel-item {
+  height: 70vh;
+  width: 100%;
+}
+.carousel-item img {
+  height: 70vh;
+  width: 100%;
+}
+
+.banner {
+  background-image: url(../assets/img/banner4.jpg);
+  height: 90vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin: 50px 0;
+  padding: 40px;
+}
+
+.capitulos {
+  margin: -100px auto 0;
+}
+
+.video {
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 577px) {
+  .banner {
+    padding: 0;
+    height: 40vh;
+  }
+
+  .video {
+    display: block;
+    width: 100%;
+  }
+}
