@@ -7,10 +7,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-nav div li {
-  padding: 0 20px;
-}
-
 .carousel-item {
   height: 70vh;
   width: 100%;
@@ -22,10 +18,10 @@ nav div li {
 
 .banner {
   background-image: url(../assets/img/banner4.jpg);
-  height: 90vh;
+  height: 80vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   padding: 40px;
 }
 
@@ -33,8 +29,20 @@ nav div li {
   margin: -100px auto 0;
 }
 
+.banner2 {
+  background-image: url(../assets/img/banner2.jpg);
+  height: 70vh;
+  width: 100%;
+  margin: 50px 0 -50px 0;
+}
+
 .video {
   margin: 50px 0;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 577px) {
@@ -47,4 +55,31 @@ nav div li {
     display: block;
     width: 100%;
   }
+
+  .banner2 div {
+    width: 100%;
+  }
+
+  .banner3 {
+    display: none;
+  }
+}
+
+.mainheroes {
+  background-image: url(../assets/img/banner3.jpg);
+  background-size: cover;
+}
+
+.cardsGaleria {
+  width: 100%;
+  height: 50vh;
+
+  object-fit: cover;
+}
+
+.nosotros {
+  background-image: url(../assets/img/nosotros.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
 }

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entrega1</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="shortcut icon" href="../flavicon.png" />
     <script
@@ -31,17 +31,22 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+            >
               <li class="nav-item">
-                <a class="nav-link" href="../index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./heroes.html">Heroes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./galeria.html">Galeria</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./galeria.html"
+                  >Galeria</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
@@ -52,77 +57,257 @@
             </ul>
           </div>
         </div>
+      </nav>
     </header>
-    <main>
-      <h2>galeria de fotos</h2>
-      <div>
-        <img src="../assets/img/ramdon3.jpg" alt="heroes" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta
-          officiis voluptates in iusto molestias magni dolores cumque, fuga
-          reprehenderit tempora laudantium temporibus repellat libero? Cumque
-          recusandae amet voluptatum rem.
-        </p>
-      </div>
-      <div>
-        <img src="../assets/img/ramdon2.jpg" alt="heroes" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta
-          officiis voluptates in iusto molestias magni dolores cumque, fuga
-          reprehenderit tempora laudantium temporibus repellat libero? Cumque
-          recusandae amet voluptatum rem.
-        </p>
-      </div>
-      <div>
-        <img src="../assets/img/ramdon4.jpg" alt="heroes" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta
-          officiis voluptates in iusto molestias magni dolores cumque, fuga
-          reprehenderit tempora laudantium temporibus repellat libero? Cumque
-          recusandae amet voluptatum rem.
-        </p>
-      </div>
-      <div>
-        <img src="../assets/img/ramdon1.jpg" alt="heroes" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta
-          officiis voluptates in iusto molestias magni dolores cumque, fuga
-          reprehenderit tempora laudantium temporibus repellat libero? Cumque
-          recusandae amet voluptatum rem.
-        </p>
+    <main class="bg-secondary p-5">
+      <h1 class="text-white text-center">
+        Te presentamos algunas fotos y caracteristicas de nuestros personajes
+        favoritos
+      </h1>
+      <p class="text-white text-center">
+        Acordate que podes crear tu heroe y algun dia podria estar incluido
+        aca...
+      </p>
+      <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/ironMan.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de iron man"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iron-man</h5>
+              <p class="card-text">
+                El inventor Tony Stark aplica su genio para las soluciones de
+                alta tecnología a los problemas como Iron Man, el Vengador
+                blindado.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/capitan.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto del capitan america"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Capitan America</h5>
+              <p class="card-text">
+                El supersoldado estadounidense de la Segunda Guerra Mundial
+                continúa su lucha en el presente como vengador y centinela
+                incansable de la libertad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/hulk.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de hulk"
+            />
+            <div class="card-body">
+              <h5 class="card-title">hulk</h5>
+              <p class="card-text">
+                Expuesto a grandes dosis de radiación gamma, el científico Bruce
+                Banner se transforma en la máquina de rabia verde llamada Hulk.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/viudaNegra.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de viuda negra"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Viuda negra</h5>
+              <p class="card-text">
+                Un asesino mortal se acerca a Natasha Romanoff. Ahora Natasha
+                debe reunirse con un improbable grupo de espías de su pasado
+                para sobrevivir y evitar que se desate una fuerza letal en el
+                mundo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/halcon.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de hawkeye"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hawkeye</h5>
+              <p class="card-text">
+                Un tirador y luchador experto, Clint Barton hace un buen uso de
+                su talento trabajando para S.H.I.E.L.D. como agente especial. El
+                arquero conocido como Ojo de Halcón también cuenta con una
+                fuerte brújula moral que a veces lo desvía de sus órdenes
+                directas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/loki.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de loki"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Loki</h5>
+              <p class="card-text">
+                Loki, príncipe de Asgard, Odinson, heredero legítimo de
+                Jotunheim y dios de las travesuras, está cargado de glorioso
+                propósito. Su deseo de ser rey lo lleva a sembrar el caos en
+                Asgard. En su ansia de poder, extiende su alcance a la Tierra..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/spiderman.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de spiderman"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spider Man</h5>
+              <p class="card-text">
+                Con increíbles habilidades arácnidas, el genio de la ciencia
+                adolescente Peter Parker lucha contra el crimen y sueña con
+                convertirse en un Vengador como Spider-Man.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/thor.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de thor"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thor</h5>
+              <p class="card-text">
+                Thor Odinson ejerce el poder de los antiguos asgardianos para
+                luchar contra el mal en los Nueve Reinos y más allá.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/groot.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de groot"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Groot</h5>
+              <p class="card-text">
+                Este ser con forma de árbol salió de su zona de confort para
+                ayudar a los Guardianes de la Galaxia a mantener a salvo a la
+                gente del universo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/img/thanos.jpg"
+              class="card-img-top cardsGaleria"
+              alt="foto de thanos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thanos</h5>
+              <p class="card-text">
+                Usando el poder de las Gemas del Infinito, Thanos cree que, en
+                última instancia, puede salvar el universo eliminando a la mitad
+                de su población.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer class="footer">
-      <section>
-        <a href="https://web.whatsapp.com/" target="_blank"
-          ><i class="fa-brands fa-whatsapp icon" style="color: #ffffff"></i
-        ></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><i class="fa-brands fa-instagram icon" style="color: #ffffff"></i
-        ></a>
-        <a href="https://twitter.com/" target="_blank"
-          ><i class="fa-brands fa-twitter icon" style="color: #ffffff"></i
-        ></a>
-      </section>
-      <section>
+    <footer class="row bg-dark text-center footer">
+      <div class="col-10 p-3 col-lg-4">
+        <h4 class="text-white">Podes encontrarnos aca:</h4>
         <iframe
-          class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56163.50238591933!2d-77.08525839322174!3d38.9068076633779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sCasa%20Blanca!5e0!3m2!1ses-419!2sar!4v1696695451281!5m2!1ses-419!2sar"
-          width="400"
-          height="300"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.72081493388!2d-115.17316722432336!3d36.124658872447455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1ses-419!2sar!4v1698730446391!5m2!1ses-419!2sar"
+          width="100%"
+          height="200vh"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          suscipit ipsum nihil ipsa quisquam deleniti consequuntur pariatur.
-          Ratione ullam libero iste molestias natus assumenda debitis facilis,
-          sint sequi incidunt deserunt.
-        </p>
-      </section>
+        <div class="row p-4">
+          <i class="fa-solid fa-location-dot col-1" style="color: #ffffff"></i>
+          <p class="text-white col-11">
+            3300 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos
+          </p>
+          <i class="fa-solid fa-globe col-1" style="color: #ffffff"></i>
+          <p class="text-white col-11">http://www.stationattraction.com/</p>
+          <i class="fa-solid fa-phone col-1" style="color: #ffffff"></i>
+          <p class="text-white col-11">+17028947626</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <a href="index.html"
+          ><img class="img-fluid w-50" src="../assets/img/logo.jpg" alt="logo"
+        /></a>
+      </div>
+      <div class="col-12 col-lg-3">
+        <ul class="nav flex-nowrap justify-content-evenly">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./heroes.html"
+              >heroes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col col-lg-4">
+        <h4 class="text-white">Seguinos en redes:</h4>
+        <a href="https://web.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp p-2" style="color: #ffffff"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram p-2" style="color: #ffffff"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><i class="fa-brands fa-twitter p-2" style="color: #ffffff"></i
+        ></a>
+      </div>
+      <p class="text-center text-white">
+        Todos los derechos reservados a Marverl2023
+      </p>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

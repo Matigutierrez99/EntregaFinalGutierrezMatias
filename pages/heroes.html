@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entrega1</title>
+    <title>Heroes</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="shortcut icon" href="../flavicon.png" />
@@ -26,8 +26,7 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,136 +51,208 @@
             </ul>
           </div>
         </div>
+      </nav>
     </header>
-    <main>
-      <h2>Crea tu heroe</h2>
-      <div>
-        <label for="nombre">*Nombre</label>
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          required
-          minlength="5"
-          maxlength="20"
-        />
-        <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" id="fecha" />
-      </div>
-      <div>
-        <label for="descripción"></label>
-        <textarea
-          name="descripción"
-          id="descripción"
-          cols="30"
-          rows="16"
-          required
-          minlength="10"
-          maxlength="300"
-          placeholder="Descripción"
-        ></textarea>
-      </div>
-      <div><label for="especie">*Especie</label>
-      <select name="especie" id="especie">
-        <option value=""></option>
-        <option value="unknown">Unknown</option>
-        <option value="humano">Humano</option>
-        <option value="alien">Alienigena</option>
-        <option value="androide">Androide</option></div>
-      </select>
-        <div><label for="imagen">Agregar Foto</label>
-        <input
-          class="foto"
+    <main class="bg-secondary mainheroes p-3">
+      <h1 class="text-danger fw-bold text-center">Marvel Fan</h1>
+      <h3 class="text-center fw-bold text-white">¡Crea tu propio heroe!</h3>
+      <form action="./heroes.html">
+      <section class="container bg-dark w-50 rounded-3">
+        <div class="row text-white">
+          <div class="col-12 col-md-6">
+            <div class=" row">
+              <div>
+                <label for="nombre" class="form-label" >*Nombre</label>
+            <input class="form-control"
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            minlength="5"
+            maxlength="20"/>
+          </div>
+            <div>
+              <label for="fecha" class="form-label">*Fecha</label>
+            <input class="form-control" type="date" name="fecha" id="fecha" />
+          </div>
+          <div>
+            <label for="descripción" class="form-label"></label>
+            <textarea class="form-control"
+            name="descripción"
+            id="descripción"
+            cols="30"
+            rows="16"
+            required
+            minlength="10"
+            maxlength="300"
+            placeholder="Descripción"></textarea>
+          </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div>
+          <label class="form-label" for="especie">*Especie</label>
+          <select class="form-select" name="especie" id="especie">
+            <option value=""></option>
+            <option value="Alienigena">Alienigena</option>
+            <option value="Androide">Androide</option>
+            <option value="Desconocido">Desconocido</option>
+            <option value="Dios/Semidios">Dios/Semidios</option>
+            <option value="Hechizero">Hechizero</option>
+            <option value="Humano">Humano</option>
+            <option value="Mutante">Mutante</option>
+          </div>
+          </select>
+        </div>
+          <div>
+          <label for="imagen" class="form-label">*Agregar Foto</label>
+          <input class="form-control mb-4"
           type="file"
           name="imagen"
           id="imagen"
           accept=".jpg, .png, .pdf"
-          multiple
-        /></div>
-        <p>*Poderes</p>
-        <label for="Volar"
-          ><input
+          multiple/>
+          </div>
+          <div>
+          <p class="form-label">*Poderes</p>
+          <label for="FuerzaSobrehumana" class="form-check-label">
+                <input class="form-check-input" 
+                type="checkbox"
+                name="poderes"
+                id="FuerzaSobrehumana"
+                value="FuerzaSobrehumana"/>Fuerza Sobrehumana</label>
+                <label for="Inmortal" class="form-check-label">
+                    <input class="form-check-input" 
+                    type="checkbox"
+                    name="poderes"
+                    id="Inmortal"
+                    value="Inmortal"/>Inmortal</label>
+          <label for="invisibilidad" class="form-check-label">
+              <input class="form-check-input" 
+              type="checkbox"
+              name="poderes"
+              id="invisibilidad"
+              value="invisibilidad"/>invisibilidad</label>
+          <label class="form-check-label" for="Multibillonario"><input class="form-check-input" 
             type="checkbox"
             name="poderes"
-            id="Volar"
-            value="Volar"
-          />Volar</label
-        >
-        <label for="Superinteligencia"
-          ><input
+            id="Multibillonario"
+            value="Multibillonario"/>Multibillonario</label>
+            <label class="form-check-label" for="Superinteligencia"><input class="form-check-input" 
             type="checkbox"
             name="poderes"
             id="Superinteligencia"
             value="Superinteligencia"
-          />Superinteligencia</label
-        >
-        <label for="Vista de rayo láser"
-          ><input
+            />Superinteligencia</label>
+            <label for="Supervelocidad" class="form-check-label">
+                      <input class="form-check-input" 
+                      type="checkbox"
+                      name="poderes"
+                      id="Supervelocidad"
+                      value="Supervelocidad"/>Supervelocidad</label>
+            <label for="Telepatia" class="form-check-label">
+                  <input class="form-check-input" 
+                  type="checkbox"
+                  name="poderes"
+                  id="Telepatia"
+                  value="Telepatia"/>Telepatia</label>
+            <label class="form-check-label" for="Vista de rayo láser"><input class="form-check-input" 
             type="checkbox"
             name="poderes"
             id="Vista de rayo láser"
-            value="Vista de rayo láser"
-          />Vista de rayo láser</label
-        >
-        <label for="Multibillonario"
-          ><input
+            value="Vista de rayo láser"/>Vista de rayo láser</label>
+            <label for="Volar" class="form-check-label">
+            <input class="form-check-input" 
             type="checkbox"
             name="poderes"
-            id="Multibillonario"
-            value="Multibillonario"
-          />Multibillonario</label
-        >
-        <p>Tipo de personaje</p>
+            id="Volar"
+            value="Volar"/>Volar</label>
+            <label for="Creado" class="form-check-label">
+              <input class="form-check-input" 
+              type="checkbox"
+              name="poderes"
+              id="Creado"
+              value="Creado"/>Creado en descripción</label>
+          </div>
+          <p class="mt-5">*Tipo de personaje</p>
+          <div class="form-check-label">
         <label for="heroe"
-          ><input
+          ><input class="form-check-input"
             type="radio"
             name="personaje"
             id="heroe"
             value="heroe"
           />Héroe / Heroina</label
-        >
+        ></div>
+        <div class="form-check-label">
         <label for="villano"
-          ><input
+          ><input class="form-check-input"
             type="radio"
             name="personaje"
             id="villano"
             value="villano"
-          />Villano / Villana</label
-        >
-        <div><input type="reset" value="Limpiar formulario" />
-          <input type="submit" value="Enviar" /></div>
+          />Villano / Villana</label>
+        </div>
+        </div>
+      </div>
+    </div>
+        
+        <div class="text-center">
+          <input class="btn btn-outline-secondary m-2" type="reset" value="Limpiar formulario" />
+          <input class="btn btn-outline-secondary m-2" type="submit" value="Enviar" />
+        </div>
+      </section>
+    </form>
     </main>
-    <footer class="footer">
-        <section>
-          <a href="https://web.whatsapp.com/" target="_blank"
-            ><i class="fa-brands fa-whatsapp icon" style="color: #ffffff"></i
-          ></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fa-brands fa-instagram icon" style="color: #ffffff"></i
-          ></a>
-          <a href="https://twitter.com/" target="_blank"
-            ><i class="fa-brands fa-twitter icon" style="color: #ffffff"></i
-          ></a>
-        </section>
-        <section>
-          <iframe
-            class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56163.50238591933!2d-77.08525839322174!3d38.9068076633779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sCasa%20Blanca!5e0!3m2!1ses-419!2sar!4v1696695451281!5m2!1ses-419!2sar"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            suscipit ipsum nihil ipsa quisquam deleniti consequuntur pariatur.
-            Ratione ullam libero iste molestias natus assumenda debitis facilis,
-            sint sequi incidunt deserunt.
-          </p>
-        </section>
-      </footer>
-      <script src="js/bootstrap.bundle.min.js"></script>
+    <footer class="row bg-dark text-center footer">
+      <div class="col-10 p-3 col-lg-4 ">
+        <h4 class="text-white">Podes encontrarnos aca:</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.72081493388!2d-115.17316722432336!3d36.124658872447455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1ses-419!2sar!4v1698730446391!5m2!1ses-419!2sar" width="100%" height="200vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row p-4">
+          <i class="fa-solid fa-location-dot col-1" style="color: #ffffff;"></i><p class="text-white col-11">3300 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos</p>
+          <i class="fa-solid fa-globe col-1" style="color: #ffffff;"></i><p class="text-white col-11">http://www.stationattraction.com/</p>
+          <i class="fa-solid fa-phone col-1" style="color: #ffffff;"></i><p class="text-white col-11">+17028947626</p>
+      </div>
+      </div>
+      <div class="col-12 col-lg-3">
+            <a href="index.html"
+              ><img class="img-fluid w-50" src="../assets/img/logo.jpg" alt="logo"
+            /></a>
+      </div>
+      <div class="col-12  col-lg-3">
+        <ul class="nav flex-nowrap justify-content-evenly">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./heroes.html">heroes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col col-lg-4">
+        <h4 class="text-white">Seguinos en redes:</h4>
+        <a href="https://web.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp p-2" style="color: #ffffff"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram p-2" style="color: #ffffff"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><i class="fa-brands fa-twitter p-2" style="color: #ffffff"></i
+        ></a>
+      </div>
+        <p class="text-center text-white">Todos los derechos reservados a Marverl2023</p>
+    </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
