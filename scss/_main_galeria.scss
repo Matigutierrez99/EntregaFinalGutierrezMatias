@@ -1,5 +1,15 @@
 .cardsGaleria {
   width: $ancho;
-  height: 50vh;
+  height: 400px;
   object-fit: $cover;
+}
+.card-text {
+  height: 150px;
+}
+
+@media screen and (max-width: 577px) {
+  .cardsGaleria {
+    height: 650px;
+    object-fit: $cover;
+  }
 }

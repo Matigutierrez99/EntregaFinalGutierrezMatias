@@ -1,4 +1,53 @@
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer {
-  align-items: $center;
-  justify-content: $center;
+  @include flexbox(row, center, center);
+}
+
+.iconos {
+  animation-name: flotar;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.whatsapp {
+  background-color: green;
+  border-radius: 30%;
+}
+
+.instagram {
+  animation-delay: 500ms;
+  background-image: linear-gradient(
+    to right top,
+    #f4fc00,
+    #fcd500,
+    #fcad00,
+    #f68500,
+    #ea5c00,
+    #e3451a,
+    #da2b28,
+    #ce0032,
+    #c20049,
+    #ae005c,
+    #95006c,
+    #761776
+  );
+  border-radius: 30%;
+}
+
+.twitter {
+  animation-delay: 1000ms;
+  background-color: rgb(73, 92, 190);
+  border-radius: 30%;
 }

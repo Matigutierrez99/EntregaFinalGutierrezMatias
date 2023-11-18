@@ -3,9 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <meta
+      name="description"
+      content="Explora el universo de Marvel con nuestra guía completa. Descubre historias, personajes icónicos y las últimas noticias del mundo de los cómics y películas de Marvel. Sumérgete en aventuras extraordinarias de superhéroes y villanos legendarios. ¡Un viaje épico a través del universo Marvel te espera!"
+    />
+    <meta
+      name="keywords"
+      content="Marvel, cómics, superhéroes, películas Marvel, universo Marvel, Iron Man, Capitán América, Spider-Man, Thor, Hulk, Viuda Negra, Doctor Strange, Guardianes de la Galaxia, Vengadores, X-Men, historia de Marvel, villanos Marvel, Stan Lee, Thanos, Black Panther, Wakanda, Tony Stark, Steve Rogers, Peter Parker, Asgard, poderes Marvel, personajes Marvel, historietas Marvel, universo cinematográfico de Marvel, MCU, Marvel Studios, Hombre Araña, Los 4 Fantásticos, Escuadrón Supremo, Inhumanos, Celestiales, Eternos, Morbius, Blade, Shang-Chi, maestro del Kung Fu, cómics clásicos, evento Marvel, crossover Marvel, películas de superhéroes, superhéroes de Marvel, arte secuencial"
+    />
+    <title>Marvel Studios | Entretenimiento</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="shortcut icon" href="flavicon.png" />
     <script
       src="https://kit.fontawesome.com/f2e6d1b345.js"
@@ -56,7 +68,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -138,13 +150,18 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <h1
+        class="text-white text-center animate__animated animate__zoomIn fw-bold m-3"
+      >
+        <span class="span">MARVEL</span> <span class="span2">STUDIOS</span>
+      </h1>
       <section class="row text-center banner">
         <h5 class="text-white">
           No te pierdas los capitulos de la nueva temporada de Loki
         </h5>
       </section>
       <section class="row justify-content-evenly capitulos">
-        <div class="card shadow" style="width: 18rem">
+        <div class="card shadow" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap1.jpg"
             class="card-img-top"
@@ -158,7 +175,7 @@
             </p>
           </div>
         </div>
-        <div class="card shadow" style="width: 18rem">
+        <div class="card shadow" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap2.png"
             class="card-img-top"
@@ -172,7 +189,7 @@
             </p>
           </div>
         </div>
-        <div class="card shadow" style="width: 18rem">
+        <div class="card shadow" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap3.jpg"
             class="card-img-top"
@@ -186,7 +203,7 @@
             </p>
           </div>
         </div>
-        <div class="card shadow" style="width: 18rem">
+        <div class="card shadow" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap4.jpg"
             class="card-img-top"
@@ -211,86 +228,88 @@
       </section>
       <section class="container">
         <div class="row fw-bold">
-          <div class="col-4 col-md bg-white pt-3">
+          <div class="col-4 col-md bg-white pt-4 contenedorcomic comic">
             <img
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg comicimg"
               src="./assets/img/comic1.jpg"
-              alt=""
+              alt="comic de Blade"
             />
             <p class="pt-3">Blade (2023) #1</p>
           </div>
-          <div class="col-4 col-md bg-white pt-3">
+          <div class="col-4 col-md bg-white pt-4 comic">
             <img
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg comicimg"
               src="./assets/img/comic2.jpg"
-              alt=""
+              alt="comic de Fallen Friend"
             />
             <p class="pt-3">Fallen Friend (2023) #1</p>
           </div>
-          <div class="col-4 col-md bg-white pt-3">
+          <div class="col-4 col-md bg-white pt-4 comic">
             <img
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg comicimg"
               src="./assets/img/comic3.jpg"
-              alt=""
+              alt="comic de Moon Knight"
             />
             <p class="pt-3">Moon Knight: City of the Dead (2023) #1</p>
           </div>
-          <div class="col-4 col-md bg-white pt-3">
+          <div class="col-4 col-md bg-white pt-4 comic">
             <img
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg comicimg"
               src="./assets/img/comic4.jpg"
-              alt=""
+              alt="comic de Extreme Venomverse"
             />
             <p class="pt-3">Extreme Venomverse (2023) #5</p>
           </div>
-          <div class="col-4 col-md bg-white pt-3">
+          <div class="col-4 col-md bg-white pt-4 comic">
             <img
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg comicimg"
               src="./assets/img/comic5.jpg"
-              alt=""
+              alt="comic de Black Panther"
             />
             <p class="pt-3">Black Panther (2023) #2</p>
           </div>
-          <div class="col-4 col-md bg-white pt-3">
+          <div class="col-4 col-md bg-white pt-4 comic">
             <img
-              class="img-fluid shadow-lg"
+              class="img-fluid shadow-lg comicimg"
               src="./assets/img/comic6.jpg"
-              alt=""
+              alt="comic de Star Wars"
             />
             <p class="pt-3">Star Wars: Doctor Aphra (2020) #34</p>
           </div>
         </div>
       </section>
-      <section class="row justify-content-evenly video">
-        <div class="col">
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/OBeBPHxakZM?si=k5zlwuSvFcsKXVv_"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="row col align-items-center text-center">
-          <h2>Lo mejor de Marvel EN VIVO en NYCC 2023</h2>
-          <p>
-            Gane puntos, obtenga recompensas ¡Juntar! Ponte al día con todos los
-            increíbles cosplays, paneles, anuncios, revelaciones y diversión de
-            Marvel en la New York Comic Con 2023.
-          </p>
+      <section class="container">
+        <div class="row justify-content-evenly video">
+          <div class="col">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/OBeBPHxakZM?si=k5zlwuSvFcsKXVv_"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="row col align-items-center text-center text-white p-5">
+            <h2>Lo mejor de Marvel EN VIVO en NYCC 2023</h2>
+            <p class="text-white">
+              Gane puntos, obtenga recompensas ¡Juntar! Ponte al día con todos
+              los increíbles cosplays, paneles, anuncios, revelaciones y
+              diversión de Marvel en la New York Comic Con 2023.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="row">
-        <div class="col-md-5 banner3">
+      <section class="row m-0">
+        <div class="col-lg-5 banner3 p-0">
           <img
             class="img-fluid"
             src="./assets/img/banner3.jpg"
             alt="bannerheroe"
           />
         </div>
-        <div class="col-md-7 col bg-black text-center p-5">
+        <div class="col-12 col-lg-7 bg-black text-center p-5">
           <p class="fw-bold text-danger">Marvel Fan</p>
           <h3 class="fw-bold text-white">¡Crea tu propio heroe!</h3>
           <p class="text-white">
@@ -302,74 +321,86 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="row bg-dark text-center footer">
-        <div class="col-10 p-3 col-lg-4">
-          <h4 class="text-white">Podes encontrarnos aca:</h4>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.72081493388!2d-115.17316722432336!3d36.124658872447455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1ses-419!2sar!4v1698730446391!5m2!1ses-419!2sar"
-            width="100%"
-            height="200vh"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div class="row p-4">
-            <i
-              class="fa-solid fa-location-dot col-1"
-              style="color: #ffffff"
-            ></i>
-            <p class="text-white col-11">
-              3300 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos
-            </p>
-            <i class="fa-solid fa-globe col-1" style="color: #ffffff"></i>
-            <p class="text-white col-11">http://www.stationattraction.com/</p>
-            <i class="fa-solid fa-phone col-1" style="color: #ffffff"></i>
-            <p class="text-white col-11">+17028947626</p>
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row bg-dark text-center footer">
+          <div class="col-10 p-3 col-lg-4">
+            <h4 class="text-white">Podes encontrarnos aca:</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.72081493388!2d-115.17316722432336!3d36.124658872447455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1ses-419!2sar!4v1698730446391!5m2!1ses-419!2sar"
+              width="100%"
+              height="200vh"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="row p-4">
+              <i
+                class="fa-solid fa-location-dot col-1"
+                style="color: #ffffff"
+              ></i>
+              <p class="text-white col-11">
+                3300 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos
+              </p>
+              <i class="fa-solid fa-globe col-1" style="color: #ffffff"></i>
+              <p class="text-white col-11">http://www.stationattraction.com/</p>
+              <i class="fa-solid fa-phone col-1" style="color: #ffffff"></i>
+              <p class="text-white col-11">+17028947626</p>
+            </div>
           </div>
+          <div class="col-12 col-lg-3">
+            <a href="index.html"
+              ><img
+                class="img-fluid w-50"
+                src="../assets/img/logo.jpg"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="col-12 col-lg-2">
+            <ul class="nav listas flex-column text-start align-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/heroes.html">heroes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-lg-3">
+            <a href="https://web.whatsapp.com/" target="_blank"
+              ><i
+                class="fa-brands fa-whatsapp p-2 fa-3x m-2 iconos whatsapp"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i
+                class="fa-brands fa-instagram p-2 fa-3x m-2 iconos instagram"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><i
+                class="fa-brands fa-twitter p-2 fa-3x m-2 iconos twitter"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <h4 class="text-white">Seguinos en redes</h4>
+          </div>
+          <p class="text-center text-white">
+            Todos los derechos reservados a Marverl2023
+          </p>
         </div>
-        <div class="col-12 col-lg-3">
-          <a href="index.html"
-            ><img class="img-fluid w-50" src="./assets/img/logo.jpg" alt="logo"
-          /></a>
-        </div>
-        <div class="col-12 col-lg-3">
-          <ul class="nav flex-nowrap justify-content-evenly">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/heroes.html">heroes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col col-lg-4">
-          <h4 class="text-white">Seguinos en redes:</h4>
-          <a href="https://web.whatsapp.com/" target="_blank"
-            ><i class="fa-brands fa-whatsapp p-2" style="color: #ffffff"></i
-          ></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fa-brands fa-instagram p-2" style="color: #ffffff"></i
-          ></a>
-          <a href="https://twitter.com/" target="_blank"
-            ><i class="fa-brands fa-twitter p-2" style="color: #ffffff"></i
-          ></a>
-        </div>
-        <p class="text-center text-white">
-          Todos los derechos reservados a Marverl2023
-        </p>
       </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>

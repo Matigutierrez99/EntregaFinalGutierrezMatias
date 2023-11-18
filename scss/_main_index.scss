@@ -5,14 +5,23 @@
 .carousel-item img {
   @extend .carousel-item;
 }
+.span {
+  background-color: rgb(196, 0, 0);
+  padding: 6px;
+}
+
+.span2 {
+  border-top: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255, 255, 255);
+  line-height: 0.5;
+}
 
 .banner {
   background-image: url(../assets/img/banner4.jpg);
   height: 80vh;
   background-size: $ancho auto;
   background-repeat: no-repeat;
-  margin: 50px 0 0 0;
-  padding: 40px;
+  padding: 4vh;
 }
 
 .capitulos {
@@ -26,8 +35,24 @@
   margin: 50px 0 -50px 0;
 }
 
+.comic:hover {
+  color: rgb(147, 12, 12);
+  cursor: pointer;
+}
+
+.comicimg {
+  transition: transform 0.5s ease;
+}
+.comicimg:hover {
+  transform: translateY(-12px);
+}
+
 .video {
   margin: 50px 0;
+}
+
+ul.nav li.nav-item a.nav-link {
+  color: white;
 }
 
 @media screen and (max-width: 577px) {
@@ -47,5 +72,13 @@
 
   .banner3 {
     display: map-get($display, none);
+  }
+
+  ul.nav {
+    display: inline-block;
+  }
+
+  ul.nav li.nav-item {
+    display: inline-block;
   }
 }

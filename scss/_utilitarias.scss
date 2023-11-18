@@ -4,3 +4,14 @@
   background-size: $cover;
   background-position: $center;
 }
+
+.main {
+  background-image: linear-gradient(
+    to bottom,
+    #2b2b2b,
+    #454546,
+    #616062,
+    #7e7e80,
+    #9c9ca0
+  );
+}

@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeria</title>
+    <meta
+      name="description"
+      content="Descubre la guía definitiva sobre los héroes de Marvel. Conoce a tus superhéroes favoritos como Iron Man, Capitán América, Spider-Man y muchos más. Explora sus historias, poderes y aventuras en el emocionante universo de Marvel. ¡Sumérgete en la grandeza de estos icónicos defensores!"
+    />
+    <meta
+      name="keywords"
+      content="Héroes de Marvel, superhéroes, Iron Man, Capitán América, Spider-Man, Thor, Hulk, Viuda Negra, Doctor Strange, Guardianes de la Galaxia, Vengadores, X-Men, universo Marvel, poderes de superhéroes, historias de superhéroes, historietas de Marvel, cómics de Marvel, equipos de superhéroes, Marvel Studios, MCU, películas de superhéroes, personajes de Marvel, defensores, aventuras de superhéroes, Thanos, Black Panther, Wakanda, Tony Stark, Steve Rogers, Peter Parker, Asgard, poderes Marvel, personajes Marvel, historias Marvel, eventos Marvel, cómics clásicos, crossover Marvel, cómics de superhéroes, superhéroes famosos, equipos de superhéroes, arte secuencial"
+    />
+
+    <title>Galeria | Marvel Studios</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="shortcut icon" href="../flavicon.png" />
+    <link rel="stylesheet" href="../css/imagehover.min.css" />
     <script
       src="https://kit.fontawesome.com/f2e6d1b345.js"
       crossorigin="anonymous"
@@ -59,7 +69,7 @@
         </div>
       </nav>
     </header>
-    <main class="bg-secondary p-5">
+    <main class="p-5 main">
       <h1 class="text-white text-center">
         Te presentamos algunas fotos y caracteristicas de nuestros personajes
         favoritos
@@ -148,10 +158,8 @@
               <h5 class="card-title">Hawkeye</h5>
               <p class="card-text">
                 Un tirador y luchador experto, Clint Barton hace un buen uso de
-                su talento trabajando para S.H.I.E.L.D. como agente especial. El
-                arquero conocido como Ojo de Halcón también cuenta con una
-                fuerte brújula moral que a veces lo desvía de sus órdenes
-                directas.
+                su talento trabajando para S.H.I.E.L.D.. Cuenta con una fuerte
+                brújula moral que a veces lo desvía de sus órdenes directas.
               </p>
             </div>
           </div>
@@ -169,7 +177,7 @@
                 Loki, príncipe de Asgard, Odinson, heredero legítimo de
                 Jotunheim y dios de las travesuras, está cargado de glorioso
                 propósito. Su deseo de ser rey lo lleva a sembrar el caos en
-                Asgard. En su ansia de poder, extiende su alcance a la Tierra..
+                Asgard.
               </p>
             </div>
           </div>
@@ -243,70 +251,89 @@
         </div>
       </div>
     </main>
-    <footer class="row bg-dark text-center footer">
-      <div class="col-10 p-3 col-lg-4">
-        <h4 class="text-white">Podes encontrarnos aca:</h4>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.72081493388!2d-115.17316722432336!3d36.124658872447455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1ses-419!2sar!4v1698730446391!5m2!1ses-419!2sar"
-          width="100%"
-          height="200vh"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <div class="row p-4">
-          <i class="fa-solid fa-location-dot col-1" style="color: #ffffff"></i>
-          <p class="text-white col-11">
-            3300 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row bg-dark text-center footer">
+          <div class="col-10 p-3 col-lg-4">
+            <h4 class="text-white">Podes encontrarnos aca:</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.72081493388!2d-115.17316722432336!3d36.124658872447455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c415dcdb0921%3A0x37dfcfc20a7ceaac!2sMarvel%20Avengers%20S.T.A.T.I.O.N.!5e0!3m2!1ses-419!2sar!4v1698730446391!5m2!1ses-419!2sar"
+              width="100%"
+              height="200vh"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="row p-4">
+              <i
+                class="fa-solid fa-location-dot col-1"
+                style="color: #ffffff"
+              ></i>
+              <p class="text-white col-11">
+                3300 S Las Vegas Blvd, Las Vegas, NV 89109, Estados Unidos
+              </p>
+              <i class="fa-solid fa-globe col-1" style="color: #ffffff"></i>
+              <p class="text-white col-11">http://www.stationattraction.com/</p>
+              <i class="fa-solid fa-phone col-1" style="color: #ffffff"></i>
+              <p class="text-white col-11">+17028947626</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <a href="../index.html"
+              ><img
+                class="img-fluid w-50"
+                src="../assets/img/logo.jpg"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="col-12 col-lg-2">
+            <ul
+              class="nav listas flex-column text-start align-content-center justify-content-evenly"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./heroes.html">heroes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-lg-3">
+            <a href="https://web.whatsapp.com/" target="_blank"
+              ><i
+                class="fa-brands fa-whatsapp p-2 fa-3x m-2 iconos whatsapp"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i
+                class="fa-brands fa-instagram p-2 fa-3x m-2 iconos instagram"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><i
+                class="fa-brands fa-twitter p-2 fa-3x m-2 iconos twitter"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <h4 class="text-white">Seguinos en redes</h4>
+          </div>
+          <p class="text-center text-white">
+            Todos los derechos reservados a Marverl2023
           </p>
-          <i class="fa-solid fa-globe col-1" style="color: #ffffff"></i>
-          <p class="text-white col-11">http://www.stationattraction.com/</p>
-          <i class="fa-solid fa-phone col-1" style="color: #ffffff"></i>
-          <p class="text-white col-11">+17028947626</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3">
-        <a href="index.html"
-          ><img class="img-fluid w-50" src="../assets/img/logo.jpg" alt="logo"
-        /></a>
-      </div>
-      <div class="col-12 col-lg-3">
-        <ul class="nav flex-nowrap justify-content-evenly">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./heroes.html"
-              >heroes</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./galeria.html">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col col-lg-4">
-        <h4 class="text-white">Seguinos en redes:</h4>
-        <a href="https://web.whatsapp.com/" target="_blank"
-          ><i class="fa-brands fa-whatsapp p-2" style="color: #ffffff"></i
-        ></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><i class="fa-brands fa-instagram p-2" style="color: #ffffff"></i
-        ></a>
-        <a href="https://twitter.com/" target="_blank"
-          ><i class="fa-brands fa-twitter p-2" style="color: #ffffff"></i
-        ></a>
-      </div>
-      <p class="text-center text-white">
-        Todos los derechos reservados a Marverl2023
-      </p>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
   </body>

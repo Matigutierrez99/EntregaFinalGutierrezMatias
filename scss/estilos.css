@@ -6,6 +6,10 @@
   background-position: center;
 }
 
+.main {
+  background-image: linear-gradient(to bottom, #2b2b2b, #454546, #616062, #7e7e80, #9c9ca0);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,13 +22,23 @@
   width: 100%;
 }
 
+.span {
+  background-color: rgb(196, 0, 0);
+  padding: 6px;
+}
+
+.span2 {
+  border-top: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255, 255, 255);
+  line-height: 0.5;
+}
+
 .banner {
   background-image: url(../assets/img/banner4.jpg);
   height: 80vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin: 50px 0 0 0;
-  padding: 40px;
+  padding: 4vh;
 }
 
 .capitulos {
@@ -38,8 +52,25 @@
   margin: 50px 0 -50px 0;
 }
 
+.comic:hover {
+  color: rgb(147, 12, 12);
+  cursor: pointer;
+}
+
+.comicimg {
+  transition: transform 0.5s ease;
+}
+
+.comicimg:hover {
+  transform: translateY(-12px);
+}
+
 .video {
   margin: 50px 0;
+}
+
+ul.nav li.nav-item a.nav-link {
+  color: white;
 }
 
 @media screen and (max-width: 577px) {
@@ -57,6 +88,12 @@
   .banner3 {
     display: none;
   }
+  ul.nav {
+    display: inline-block;
+  }
+  ul.nav li.nav-item {
+    display: inline-block;
+  }
 }
 .mainheroes {
   background-image: url(../assets/img/banner3.jpg);
@@ -65,12 +102,60 @@
 
 .cardsGaleria {
   width: 100%;
-  height: 50vh;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.card-text {
+  height: 150px;
+}
+
+@media screen and (max-width: 577px) {
+  .cardsGaleria {
+    height: 650px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .footer {
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.iconos {
+  animation-name: flotar;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.whatsapp {
+  background-color: green;
+  border-radius: 30%;
+}
+
+.instagram {
+  animation-delay: 500ms;
+  background-image: linear-gradient(to right top, #f4fc00, #fcd500, #fcad00, #f68500, #ea5c00, #e3451a, #da2b28, #ce0032, #c20049, #ae005c, #95006c, #761776);
+  border-radius: 30%;
+}
+
+.twitter {
+  animation-delay: 1000ms;
+  background-color: rgb(73, 92, 190);
+  border-radius: 30%;
 }/*# sourceMappingURL=estilos.css.map */
