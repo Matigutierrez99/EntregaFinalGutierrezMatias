@@ -103,7 +103,6 @@ ul.nav li.nav-item a.nav-link {
 .cardsGaleria {
   width: 100%;
   height: 400px;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -114,7 +113,6 @@ ul.nav li.nav-item a.nav-link {
 @media screen and (max-width: 577px) {
   .cardsGaleria {
     height: 650px;
-    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -158,6 +156,6 @@ ul.nav li.nav-item a.nav-link {
   animation-delay: 1000ms;
   background-color: rgb(73, 92, 190);
   border-radius: 30%;
-} 
+}
 
 /*# sourceMappingURL=estilos.css.map */
