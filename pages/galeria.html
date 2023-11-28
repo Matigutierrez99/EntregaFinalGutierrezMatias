@@ -12,9 +12,13 @@
       content="Héroes de Marvel, superhéroes, Iron Man, Capitán América, Spider-Man, Thor, Hulk, Viuda Negra, Doctor Strange, Guardianes de la Galaxia, Vengadores, X-Men, universo Marvel, poderes de superhéroes, historias de superhéroes, historietas de Marvel, cómics de Marvel, equipos de superhéroes, Marvel Studios, MCU, películas de superhéroes, personajes de Marvel, defensores, aventuras de superhéroes, Thanos, Black Panther, Wakanda, Tony Stark, Steve Rogers, Peter Parker, Asgard, poderes Marvel, personajes Marvel, historias Marvel, eventos Marvel, cómics clásicos, crossover Marvel, cómics de superhéroes, superhéroes famosos, equipos de superhéroes, arte secuencial"
     />
 
-    <title>Galeria | Marvel Studios</title>
+    <title>Marvel Galeria | Marvel Studios</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="shortcut icon" href="../flavicon.png" />
     <link rel="stylesheet" href="../css/imagehover.min.css" />
     <script
@@ -25,7 +29,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+        <div class="container ps-5">
           <a class="navbar-brand w-50" href="../index.html"
             ><img class="w-25" src="../assets/img/logo.jpg" alt="logo"
           /></a>
@@ -48,7 +52,7 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./heroes.html">Heroes</a>
+                <a class="nav-link" href="./heroes.html">Héroes</a>
               </li>
               <li class="nav-item">
                 <a
@@ -69,11 +73,16 @@
         </div>
       </nav>
     </header>
-    <main class="p-5 main">
-      <h1 class="text-white text-center">
+    <main class="p-4 main">
+      <h1
+        class="text-white text-center fw-bold animate__animated animate__zoomIn"
+      >
+        <span class="marvel">Marvel</span> Galeria
+      </h1>
+      <h2 class="text-white text-center">
         Te presentamos algunas fotos y caracteristicas de nuestros personajes
         favoritos
-      </h1>
+      </h2>
       <p class="text-white text-center">
         Acordate que podes crear tu heroe y algun dia podria estar incluido
         aca...
@@ -81,13 +90,15 @@
       <div class="row row-cols-1 row-cols-md-5 g-4">
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/ironMan.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de iron man"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Iron-man</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/ironMan.jpg"
+                class="card-img-top"
+                alt="foto de iron man"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Iron-man</h3>
               <p class="card-text">
                 El inventor Tony Stark aplica su genio para las soluciones de
                 alta tecnología a los problemas como Iron Man, el Vengador
@@ -98,13 +109,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/capitan.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto del capitan america"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Capitan America</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/capitan.jpg"
+                class="card-img-top"
+                alt="foto del capitan america"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Capitan America</h3>
               <p class="card-text">
                 El supersoldado estadounidense de la Segunda Guerra Mundial
                 continúa su lucha en el presente como vengador y centinela
@@ -115,13 +128,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/hulk.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de hulk"
-            />
-            <div class="card-body">
-              <h5 class="card-title">hulk</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/hulk.jpg"
+                class="card-img-top"
+                alt="foto de hulk"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Hulk</h3>
               <p class="card-text">
                 Expuesto a grandes dosis de radiación gamma, el científico Bruce
                 Banner se transforma en la máquina de rabia verde llamada Hulk.
@@ -131,13 +146,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/viudaNegra.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de viuda negra"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Viuda negra</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/viudaNegra.jpg"
+                class="card-img-top"
+                alt="foto de viuda negra"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Viuda negra</h3>
               <p class="card-text">
                 Un asesino mortal se acerca a Natasha Romanoff. Ahora Natasha
                 debe reunirse con un improbable grupo de espías de su pasado
@@ -149,13 +166,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/halcon.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de hawkeye"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Hawkeye</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/halcon.jpg"
+                class="card-img-top"
+                alt="foto de hawkeye"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Hawkeye</h3>
               <p class="card-text">
                 Un tirador y luchador experto, Clint Barton hace un buen uso de
                 su talento trabajando para S.H.I.E.L.D.. Cuenta con una fuerte
@@ -166,13 +185,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/loki.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de loki"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Loki</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/loki.jpg"
+                class="card-img-top"
+                alt="foto de loki"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Loki</h3>
               <p class="card-text">
                 Loki, príncipe de Asgard, Odinson, heredero legítimo de
                 Jotunheim y dios de las travesuras, está cargado de glorioso
@@ -184,13 +205,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/spiderman.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de spiderman"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Spider Man</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/spiderman.jpg"
+                class="card-img-top"
+                alt="foto de spiderman"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Spider Man</h3>
               <p class="card-text">
                 Con increíbles habilidades arácnidas, el genio de la ciencia
                 adolescente Peter Parker lucha contra el crimen y sueña con
@@ -201,13 +224,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/thor.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de thor"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Thor</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/thor.jpg"
+                class="card-img-top"
+                alt="foto de thor"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Thor</h3>
               <p class="card-text">
                 Thor Odinson ejerce el poder de los antiguos asgardianos para
                 luchar contra el mal en los Nueve Reinos y más allá.
@@ -217,13 +242,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/groot.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de groot"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Groot</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/groot.jpg"
+                class="card-img-top"
+                alt="foto de groot"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Groot</h3>
               <p class="card-text">
                 Este ser con forma de árbol salió de su zona de confort para
                 ayudar a los Guardianes de la Galaxia a mantener a salvo a la
@@ -234,13 +261,15 @@
         </div>
         <div class="col">
           <div class="card">
-            <img
-              src="../assets/img/thanos.jpg"
-              class="card-img-top cardsGaleria"
-              alt="foto de thanos"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Thanos</h5>
+            <div class="galeria">
+              <img
+                src="../assets/img/thanos.jpg"
+                class="card-img-top"
+                alt="foto de thanos"
+              />
+            </div>
+            <div class="card-body galeriadiv">
+              <h3 class="card-title fw-bold">Thanos</h3>
               <p class="card-text">
                 Usando el poder de las Gemas del Infinito, Thanos cree que, en
                 última instancia, puede salvar el universo eliminando a la mitad
@@ -249,6 +278,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="./404.html" class="btn btn-secondary">Ver más</a>
       </div>
     </main>
     <footer class="bg-dark">
@@ -295,7 +327,7 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./heroes.html">heroes</a>
+                <a class="nav-link" href="./heroes.html">Héroes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./galeria.html">Galeria</a>

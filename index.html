@@ -27,7 +27,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+        <div class="container ps-5">
           <a class="navbar-brand w-50" href="index.html"
             ><img class="w-25" src="./assets/img/logo.jpg" alt="logo"
           /></a>
@@ -104,7 +104,7 @@
               alt="estreno1"
             />
             <div class="carousel-caption">
-              <h5>PRÓXIMAMENTE</h5>
+              <p class="fw-bold">PRÓXIMAMENTE</p>
               <p>Solo en cines a partir de Noviembre del 2024</p>
             </div>
           </div>
@@ -115,7 +115,7 @@
               alt="estreno2"
             />
             <div class="carousel-caption">
-              <h5>PRÓXIMAMENTE</h5>
+              <p class="fw-bold">PRÓXIMAMENTE</p>
               <p>Solo en cines a partir de Mayo del 2024</p>
             </div>
           </div>
@@ -126,7 +126,7 @@
               alt="estreno3"
             />
             <div class="carousel-caption">
-              <h5>PRÓXIMAMENTE</h5>
+              <p class="fw-bold">PRÓXIMAMENTE</p>
               <p>Solo en cines a partir de Noviembre del 2023</p>
             </div>
           </div>
@@ -155,75 +155,87 @@
       >
         <span class="span">MARVEL</span> <span class="span2">STUDIOS</span>
       </h1>
-      <section class="row text-center banner">
-        <h5 class="text-white">
+      <section class="text-center banner">
+        <p class="text-white fw-bold">
           No te pierdas los capitulos de la nueva temporada de Loki
-        </h5>
+        </p>
       </section>
       <section class="row justify-content-evenly capitulos">
-        <div class="card shadow" role="button" style="width: 18rem">
+        <div class="card shadow m-2" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap1.jpg"
             class="card-img-top"
             alt="Capitulo1"
           />
           <div class="card-body">
-            <h5 class="card-title text-muted">1.Un glorioso propósito</h5>
-            <p class="card-text">
+            <p class="card-title text-muted fw-bold">1.Un glorioso propósito</p>
+            <p>
               Tras robar el Teseracto en “Avengers: Endgame”, Loki cae ante la
               Autoridad de Variación Temporal.
             </p>
           </div>
         </div>
-        <div class="card shadow" role="button" style="width: 18rem">
+        <div class="card shadow m-2" role="button" style="width: 18rem">
           <img
-            src="./assets/img/cap2.png"
+            src="./assets/img/cap2.jpg"
             class="card-img-top"
             alt="Capitulo2"
           />
           <div class="card-body">
-            <h5 class="card-title text-muted">2.La variante</h5>
-            <p class="card-text">
+            <p class="card-title text-muted fw-bold">2.La variante</p>
+            <p>
               Mobius pone a trabajar a Loki, y no todos en la AVT están
               contentos con el Dios de las Mentiras.
             </p>
           </div>
         </div>
-        <div class="card shadow" role="button" style="width: 18rem">
+        <div class="card shadow m-2" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap3.jpg"
             class="card-img-top"
             alt="Capitulo3"
           />
           <div class="card-body">
-            <h5 class="card-title text-muted">3.Lamentis</h5>
-            <p class="card-text">
+            <p class="card-title text-muted fw-bold">3.Lamentis</p>
+            <p>
               Loki descubre el plan de la variante y saca un as de la manga que
               podría cambiar todo para siempre.
             </p>
           </div>
         </div>
-        <div class="card shadow" role="button" style="width: 18rem">
+        <div class="card shadow m-2" role="button" style="width: 18rem">
           <img
             src="./assets/img/cap4.jpg"
             class="card-img-top"
             alt="Capitulo4"
           />
           <div class="card-body">
-            <h5 class="card-title text-muted">4.El evento nexus</h5>
-            <p class="card-text">
+            <p class="card-title text-muted fw-bold">4.El evento nexus</p>
+            <p>
               La tensión y la paranoia se apoderan de la AVT mientras Mobius y
               B-15 buscan a Loki y Sylvie.
             </p>
           </div>
         </div>
       </section>
+      <div class="text-center m-3">
+        <a href="./pages/404.html" class="btn btn-secondary">Ver más</a>
+      </div>
       <section class="row banner2">
-        <div class="col-3 bg-black text-center text-white p-3">
-          <img class="w-50 m-3" src="./assets/img/logobanner.jpg" alt="" />
-          <h3 class="p-2">DISPONIBLE AHORA NOVEDADES EN MARVEL ILIMITADO</h3>
+        <div class="col-3 bg-black text-center text-white">
+          <img
+            class="w-50 m-3"
+            src="./assets/img/logobanner.jpg"
+            alt="banner de Marvel Ilimitado"
+          />
+          <h2 class="p-2">
+            DISPONIBLE AHORA NOVEDADES EN
+            <span class="marvel">MARVEL</span> ILIMITADO
+          </h2>
           <p>¡Lee estos más 30,000+ cómics digitales por $999,99 al mes!</p>
-          <button class="btn btn-secondary">Consigue Marvel ILIMITADO</button>
+          <a href="./pages/404.html" class="btn btn-secondary"
+            >Consigue Marvel ILIMITADO</a
+          >
         </div>
       </section>
       <section class="container">
@@ -292,7 +304,10 @@
             ></iframe>
           </div>
           <div class="row col align-items-center text-center text-white p-5">
-            <h2>Lo mejor de Marvel EN VIVO en NYCC 2023</h2>
+            <h2 class="fw-bold">
+              Lo mejor de <span class="marvel">Marvel</span> EN VIVO en NYCC
+              2023
+            </h2>
             <p class="text-white">
               Gane puntos, obtenga recompensas ¡Juntar! Ponte al día con todos
               los increíbles cosplays, paneles, anuncios, revelaciones y
@@ -310,13 +325,13 @@
           />
         </div>
         <div class="col-12 col-lg-7 bg-black text-center p-5">
-          <p class="fw-bold text-danger">Marvel Fan</p>
-          <h3 class="fw-bold text-white">¡Crea tu propio heroe!</h3>
+          <h2 class="marvel fw-bold">Marvel Fan</h2>
+          <h3 class="fw-bold text-white">¡Crea tu propio Héroe!</h3>
           <p class="text-white">
             Hacelo y sumas puntos para los sorteos que tenemos
           </p>
-          <a href="./pages/heroes.html"
-            ><button class="btn btn-secondary">Crear Heroe</button></a
+          <a href="./pages/heroes.html" class="btn btn-secondary"
+            >Crear Héroe</a
           >
         </div>
       </section>
@@ -353,7 +368,7 @@
             <a href="index.html"
               ><img
                 class="img-fluid w-50"
-                src="../assets/img/logo.jpg"
+                src="./assets/img/logo.jpg"
                 alt="logo"
             /></a>
           </div>
@@ -363,7 +378,7 @@
                 <a class="nav-link" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/heroes.html">heroes</a>
+                <a class="nav-link" href="./pages/heroes.html">Héroes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/galeria.html">Galeria</a>
@@ -398,7 +413,8 @@
             <h4 class="text-white">Seguinos en redes</h4>
           </div>
           <p class="text-center text-white">
-            Todos los derechos reservados a Marverl2023
+            Todos los derechos reservados a
+            <span class="marvel">Marverl2023</span>
           </p>
         </div>
       </div>

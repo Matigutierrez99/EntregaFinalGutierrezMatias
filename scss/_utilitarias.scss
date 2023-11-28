@@ -8,10 +8,20 @@
 .main {
   background-image: linear-gradient(
     to bottom,
-    #2b2b2b,
-    #454546,
-    #616062,
-    #7e7e80,
-    #9c9ca0
+    #000000,
+    #151515,
+    #222222,
+    #303030,
+    #3e3e3e
   );
+}
+
+.marvel {
+  color: rgb(186, 4, 4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  cursor: pointer;
 }

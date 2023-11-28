@@ -7,7 +7,17 @@
 }
 
 .main {
-  background-image: linear-gradient(to bottom, #2b2b2b, #454546, #616062, #7e7e80, #9c9ca0);
+  background-image: linear-gradient(to bottom, #000000, #151515, #222222, #303030, #3e3e3e);
+}
+
+.marvel {
+  color: rgb(186, 4, 4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  cursor: pointer;
 }
 
 * {
@@ -18,7 +28,7 @@
 }
 
 .carousel-item, .carousel-item img {
-  height: 70vh;
+  height: 75vh;
   width: 100%;
 }
 
@@ -34,7 +44,7 @@
 }
 
 .banner {
-  background-image: url(../assets/img/banner4.jpg);
+  background-image: url(../assets/img/banner.jpg);
   height: 80vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -49,7 +59,7 @@
   background-image: url(../assets/img/banner2.jpg);
   height: 70vh;
   width: 100%;
-  margin: 50px 0 -50px 0;
+  margin: 30px 0 -50px 0;
 }
 
 .comic:hover {
@@ -62,7 +72,7 @@
 }
 
 .comicimg:hover {
-  transform: translateY(-12px);
+  transform: translateY(-18px);
 }
 
 .video {
@@ -74,6 +84,10 @@ ul.nav li.nav-item a.nav-link {
 }
 
 @media screen and (max-width: 577px) {
+  .carousel-item, .carousel-item img {
+    height: 50vh;
+    width: 100%;
+  }
   .banner {
     padding: 0;
     height: 40vh;
@@ -84,6 +98,7 @@ ul.nav li.nav-item a.nav-link {
   }
   .banner2 div {
     width: 100%;
+    height: 75vh;
   }
   .banner3 {
     display: none;
@@ -96,26 +111,63 @@ ul.nav li.nav-item a.nav-link {
   }
 }
 .mainheroes {
-  background-image: url(../assets/img/banner3.jpg);
-  background-size: cover;
+  overflow: hidden;
 }
 
-.cardsGaleria {
+.heroesfondo {
+  background-image: url(../assets/img/banner3.jpg);
+  background-size: cover;
+  animation: zoomBackgroundHeroes 5s ease-in-out;
+}
+
+@keyframes zoomBackgroundHeroes {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+.galeria {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.galeria img {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  transition: transform 400ms ease-in-out;
+}
+
+.galeria:hover img {
+  transform: scale(1.08);
+}
+
+.galeriadiv:hover {
+  color: white;
+  background-color: rgba(131, 13, 13, 0.97);
 }
 
 .card-text {
-  height: 150px;
+  height: 160px;
 }
 
 @media screen and (max-width: 577px) {
-  .cardsGaleria {
+  .galeria img {
     height: 650px;
     object-fit: cover;
   }
+  .card-text {
+    height: 100%;
+  }
 }
+.listas .nav-item a.nav-link:hover {
+  color: gray;
+}
+
 @keyframes flotar {
   0% {
     transform: translateY(0px);
@@ -156,6 +208,73 @@ ul.nav li.nav-item a.nav-link {
   animation-delay: 1000ms;
   background-color: rgb(73, 92, 190);
   border-radius: 30%;
+}
+
+.logo {
+  position: relative;
+  transition: transform 1s ease-out;
+  animation: verticalLogo 8s ease-out 1s forwards;
+  transform-origin: top left;
+  z-index: 2;
+}
+
+@keyframes verticalLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(70deg);
+  }
+  75% {
+    transform: rotate(95deg);
+  }
+  100% {
+    transform: rotate(75deg);
+  }
+}
+.main404 {
+  overflow: hidden;
+}
+
+.roto {
+  display: flex;
+  background-image: url(../assets/img/404.jpg);
+  background-size: cover;
+  height: 80vh;
+  animation: zoomBackground 700ms ease-in-out forwards;
+  z-index: 1;
+  padding: 0 6%;
+}
+
+@keyframes zoomBackground {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.texto404 {
+  color: white;
+  width: 560px;
+}
+
+.texto404 h1 {
+  color: rgb(13, 119, 13);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 577px) {
+  .roto {
+    align-content: end !important;
+  }
+  .texto404 {
+    padding: 10vh 0;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

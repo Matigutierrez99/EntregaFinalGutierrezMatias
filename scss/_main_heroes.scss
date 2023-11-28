@@ -1,4 +1,17 @@
 .mainheroes {
+  overflow: hidden;
+}
+.heroesfondo {
   background-image: url(../assets/img/banner3.jpg);
   background-size: $cover;
+  animation: zoomBackgroundHeroes 5s ease-in-out;
+}
+
+@keyframes zoomBackgroundHeroes {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }

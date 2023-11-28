@@ -1,15 +1,37 @@
-.cardsGaleria {
+.galeria {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.galeria img {
   width: $ancho;
   height: 400px;
   object-fit: $cover;
+  transition: transform 400ms ease-in-out;
 }
+
+.galeria:hover img {
+  transform: scale(1.08);
+}
+
+.galeriadiv:hover {
+  color: white;
+  background-color: rgba(131, 13, 13, 0.97);
+}
+
 .card-text {
-  height: 150px;
+  height: 160px;
 }
 
 @media screen and (max-width: 577px) {
-  .cardsGaleria {
+  .galeria img {
     height: 650px;
     object-fit: $cover;
+  }
+
+  .card-text {
+    height: 100%;
   }
 }

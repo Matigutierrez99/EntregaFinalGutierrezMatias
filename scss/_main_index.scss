@@ -17,7 +17,7 @@
 }
 
 .banner {
-  background-image: url(../assets/img/banner4.jpg);
+  background-image: url(../assets/img/banner.jpg);
   height: 80vh;
   background-size: $ancho auto;
   background-repeat: no-repeat;
@@ -30,9 +30,9 @@
 
 .banner2 {
   background-image: url(../assets/img/banner2.jpg);
-  height: $altobanner;
+  height: 70vh;
   width: $ancho;
-  margin: 50px 0 -50px 0;
+  margin: 30px 0 -50px 0;
 }
 
 .comic:hover {
@@ -44,7 +44,7 @@
   transition: transform 0.5s ease;
 }
 .comicimg:hover {
-  transform: translateY(-12px);
+  transform: translateY(-18px);
 }
 
 .video {
@@ -56,6 +56,10 @@ ul.nav li.nav-item a.nav-link {
 }
 
 @media screen and (max-width: 577px) {
+  .carousel-item {
+    height: 50vh;
+    width: $ancho;
+  }
   .banner {
     padding: 0;
     height: 40vh;
@@ -68,6 +72,7 @@ ul.nav li.nav-item a.nav-link {
 
   .banner2 div {
     width: $ancho;
+    height: $altobanner;
   }
 
   .banner3 {

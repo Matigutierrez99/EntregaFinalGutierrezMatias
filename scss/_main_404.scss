@@ -1,0 +1,68 @@
+.logo {
+  position: relative;
+  transition: transform 1s ease-out;
+  animation: verticalLogo 8s ease-out 1s forwards;
+  transform-origin: top left;
+  z-index: 2;
+}
+
+@keyframes verticalLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(70deg);
+  }
+  75% {
+    transform: rotate(95deg);
+  }
+  100% {
+    transform: rotate(75deg);
+  }
+}
+
+.main404 {
+  overflow: hidden;
+}
+
+.roto {
+  display: flex;
+  background-image: url(../assets/img/404.jpg);
+  background-size: cover;
+  height: 80vh;
+  animation: zoomBackground 700ms ease-in-out forwards;
+  z-index: 1;
+  padding: 0 6%;
+}
+@keyframes zoomBackground {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.texto404 {
+  color: white;
+  width: 560px;
+}
+
+.texto404 h1 {
+  color: rgb(13, 119, 13);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 577px) {
+  .roto {
+    align-content: end !important;
+  }
+
+  .texto404 {
+    padding: 10vh 0;
+  }
+}
