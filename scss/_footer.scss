@@ -1,7 +1,9 @@
 .listas .nav-item a.nav-link:hover {
   color: gray;
 }
-
+.nav-link {
+  padding: 7px !important;
+}
 @keyframes flotar {
   0% {
     transform: translateY(0px);
