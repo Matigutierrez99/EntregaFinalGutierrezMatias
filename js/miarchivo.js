@@ -1,4 +1,4 @@
-const Producto = function (nombre, precio, stock) {
+/* const Producto = function (nombre, precio, stock) {
   this.nombre = nombre;
   this.precio = precio;
   this.stock = stock;
@@ -84,3 +84,48 @@ function procesarCompra() {
 }
 
 procesarCompra();
+ */
+
+//pagina heroes
+
+let formularioHeroes = document.getElementById("formularioHeroes");
+formularioHeroes.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let nombre = document.getElementById("nombre").value;
+  let fecha = document.getElementById("fecha").value;
+  let descripcion = document.getElementById("descripcion").value;
+  let especie = document.getElementById("especie").value;
+  let poderesSeleccionados = [];
+  document
+    .querySelectorAll('input[name="poderes"]:checked')
+    .forEach(function (checkbox) {
+      poderesSeleccionados.push(checkbox.value);
+    });
+
+  let tipoPersonaje = document.querySelector('input[name="personaje"]:checked');
+  let imagen = document.getElementById("imagen");
+  let imagenFileName = imagen.files.length > 0 ? imagen.files[0].name : null;
+
+  let datos = {
+    nombre: nombre,
+    fecha: fecha,
+    descripcion: descripcion,
+    especie: especie,
+    poderes: poderesSeleccionados,
+    tipoPersonaje: tipoPersonaje ? tipoPersonaje.value : null,
+    imagen: imagenFileName,
+  };
+
+  let datosJson = JSON.stringify(datos);
+
+  localStorage.setItem("Heroe", datosJson);
+  mostrarDatosEnPagina(datosJson);
+});
+
+function mostrarDatosEnPagina(datos) {
+  let mostrarDatos = document.getElementById("mostrarDatos");
+  let parrafo = document.createElement("p");
+  parrafo.textContent = "Felicidades!! Creaste a tu heroe.";
+  mostrarDatos.appendChild(parrafo);
+}

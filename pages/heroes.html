@@ -63,7 +63,7 @@
       <div class="heroesfondo p-4">
       <h1 class="marvel fw-bold text-center  animate__animated animate__zoomIn">Marvel Fan</h1>
       <h2 class="text-center fw-bold text-white">¡Crea tu propio heroe!</h2>
-      <form action="./404.html">
+      <form id="formularioHeroes">
       <section class="container bg-dark rounded-3 col-md-6">
         <div class="row text-white">
           <div class="col-12 col-md-6">
@@ -83,10 +83,10 @@
             <input class="form-control" type="date" name="fecha" id="fecha" />
           </div>
           <div>
-            <label for="descripción" class="form-label"></label>
+            <label for="descripcion" class="form-label"></label>
             <textarea class="form-control"
             name="descripción"
-            id="descripción"
+            id="descripcion"
             cols="30"
             rows="16"
             required
@@ -230,6 +230,7 @@
       </section>
     </form>
   </div>
+  <div id="mostrarDatos"></div>
     </main>
     <footer class="bg-dark">
       <div class="container">
@@ -315,6 +316,6 @@
         </div>
       </div>
     </footer>
-      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/miarchivo.js"></script>
   </body>
 </html>
