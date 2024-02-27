@@ -23,20 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function obtenerPrecioProducto(producto) {
-    // Aquí puedes implementar la lógica para obtener el precio del producto.
-    // Puedes almacenar los precios en un objeto o array.
-    // Por ejemplo:
     const precios = {
-      "Iron-man": 200,
-      "Capitan-America": 200,
-      Hulk: 100,
-      "Viuda-Negra": 80,
-      Hawkeye: 50,
-      Loki: 200,
-      "Spider-Man": 250,
-      Thor: 150,
-      Groot: 150,
-      Thanos: 200,
+      "Iron-man": 20000,
+      "Capitan-America": 20000,
+      Hulk: 10000,
+      "Viuda-Negra": 80000,
+      Hawkeye: 50000,
+      Loki: 20000,
+      "Spider-Man": 25000,
+      Thor: 15000,
+      Groot: 15000,
+      Thanos: 20000,
     };
 
     return precios[producto] || 0;
@@ -59,3 +56,44 @@ document.addEventListener("DOMContentLoaded", function () {
     totalCarrito.textContent = total;
   }
 });
+
+const mp = new MercadoPago("TEST-251821c0-4597-4dab-8868-dd908972a5bf", {
+  locale: "es-AR",
+});
+
+document.getElementById("checkout-btn").addEventListener("click", async () => {
+  try {
+    const orderData = {
+      title: "Poductos",
+      quantity: 1,
+      price: document.getElementById("total").innerText,
+    };
+
+    const response = await fetch("http://localhost:3001/create_preference", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(orderData),
+    });
+
+    const preference = await response.json();
+    createCheckoutButton(preference.id);
+  } catch (error) {
+    alert("error");
+  }
+});
+
+const createCheckoutButton = (preferenceId) => {
+  const bricksBuilder = mp.bricks();
+
+  const renderComponent = async () => {
+    if (window.checkoutButton) window.checkoutButton.unmount();
+    await bricksBuilder.create("wallet", "wallet_container", {
+      initialization: {
+        preferenceId: preferenceId,
+      },
+    });
+  };
+  renderComponent();
+};

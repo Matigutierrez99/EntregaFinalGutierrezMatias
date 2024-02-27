@@ -11,7 +11,6 @@
       name="keywords"
       content="Héroes de Marvel, superhéroes, Iron Man, Capitán América, Spider-Man, Thor, Hulk, Viuda Negra, Doctor Strange, Guardianes de la Galaxia, Vengadores, X-Men, universo Marvel, poderes de superhéroes, historias de superhéroes, historietas de Marvel, cómics de Marvel, equipos de superhéroes, Marvel Studios, MCU, películas de superhéroes, personajes de Marvel, defensores, aventuras de superhéroes, Thanos, Black Panther, Wakanda, Tony Stark, Steve Rogers, Peter Parker, Asgard, poderes Marvel, personajes Marvel, historias Marvel, eventos Marvel, cómics clásicos, crossover Marvel, cómics de superhéroes, superhéroes famosos, equipos de superhéroes, arte secuencial"
     />
-
     <title>Marvel Galeria | Marvel Studios</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
@@ -25,6 +24,7 @@
       src="https://kit.fontawesome.com/f2e6d1b345.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
   </head>
   <body>
     <header>
@@ -80,8 +80,8 @@
         <span class="marvel">Marvel</span> Galeria
       </h1>
       <h2 class="text-white text-center">
-        Te presentamos algunas fotos y caracteristicas de nuestros personajes
-        favoritos
+        Te presentamos algunas de los comics de nuestros personajes favoritos
+        que podrias comprar
       </h2>
       <p class="text-white text-center">
         Acordate que podes crear tu heroe y algun dia podria estar incluido
@@ -326,11 +326,15 @@
           <div id="carrito" class="text-center btn-secondary col-4 mt-4">
             <h2>Carrito de Compras</h2>
             <ul id="lista-carrito"></ul>
-            <p>Total: $<span id="total">0</span>USD</p>
+            <p>Total: $<span id="total">0</span>$</p>
+            <button id="checkout-btn" class="btn btn-primary">Pagar</button>
+            <div id="wallet_container"></div>
           </div>
+          <div id="wallet_container"></div>
         </div>
       </div>
     </main>
+    <div id="wallet_container"></div>
     <footer class="bg-dark">
       <div class="container">
         <div class="row bg-dark text-center footer">
