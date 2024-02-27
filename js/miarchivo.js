@@ -120,12 +120,15 @@ formularioHeroes.addEventListener("submit", function (e) {
   let datosJson = JSON.stringify(datos);
 
   localStorage.setItem("Heroe", datosJson);
-  mostrarDatosEnPagina(datosJson);
-});
 
-function mostrarDatosEnPagina(datos) {
-  let mostrarDatos = document.getElementById("mostrarDatos");
-  let parrafo = document.createElement("p");
-  parrafo.textContent = "Felicidades!! Creaste a tu heroe.";
-  mostrarDatos.appendChild(parrafo);
-}
+  const btn = document.getElementById("boton");
+  btn.addEventListener("click", () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Felicitaciones! Creaste tu heroe y lo tendremos en cuenta",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  });
+});
